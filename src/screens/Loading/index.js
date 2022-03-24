@@ -1,13 +1,13 @@
 import React, { useEffect } from "react"
 import SplashScreen from "react-native-splash-screen"
 import { useSelector, useDispatch } from "react-redux"
-import { retrieveData } from "../../utils"
+import { getData } from "~utils"
 
 const LoadingScreen = props => {
   const dispatch = useDispatch()
   const onProcess = () => {
     SplashScreen.hide()
-    const userData = retrieveData("userData")
+    const userData = getData("userData")
     if (userData) {
       props.navigation.navigate("Drawer")
     }

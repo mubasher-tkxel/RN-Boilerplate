@@ -1,6 +1,6 @@
 import { authUrls } from "../consts/appConsts";
 import langDict from "../translations/en";
-import { retrieveData } from "./storage";
+import { getData, setData } from "~utils/storage";
 
 export const checkIfAuthUrl = (targetUrl) => {
     var isAuthUrl = false;
@@ -14,4 +14,4 @@ export const checkIfAuthUrl = (targetUrl) => {
 
 export const getText = (key) => langDict[key]
 
-export {retrieveData}
+export { getData, setData }

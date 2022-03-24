@@ -1,8 +1,12 @@
-import LoadingScreen from "./Loading";
-import HomeScreen from "./main/Home";
-import SettingsScreen from "./main/Settings";
+import LoadingScreen from "~screens/Loading";
+import HomeScreen from "~screens/main/Home";
+import SettingsScreen from "~screens/main/Settings";
+import LoginScreen from "~screens/auth/Login";
+import SignUpScreen from "~screens/auth/SignUp";
 export {
     HomeScreen,
     SettingsScreen,
-    LoadingScreen
+    LoadingScreen,
+    LoginScreen,
+    SignUpScreen
 }

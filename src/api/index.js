@@ -1,8 +1,7 @@
 import axios from "axios"
 import { backendUrl, routeBase } from "../consts"
-import { retrieveData, storeData } from "../util/helpers"
-import { checkIfAuthUrl } from "../utils"
-import { refreshAccessToken } from "./auth/Auth"
+import { checkIfAuthUrl } from "~utils"
+import { refreshAccessToken } from "~api/auth/token"
 
 const BASE_URL = backendUrl + routeBase
 
