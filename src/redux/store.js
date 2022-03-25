@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit"
-import navReducer from "~redux/reducers/nav"
-import authReducer from "~redux/reducers/auth"
+import { navReducer, authReducer } from "~redux/reducers"
 export const store = configureStore({
   reducer: {
     nav: navReducer,
