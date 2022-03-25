@@ -1,9 +1,14 @@
+import { Button } from 'native-base';
 import React from 'react';
-import { Text } from 'react-native'
+import { Text, SafeAreaView } from 'react-native'
 
-const SettingsScreen = () => {
-    return <Text>
-        Settings
-    </Text>
+const SettingsScreen = ({navigation}) => {
+    return <SafeAreaView>
+        <Text>
+            Settings
+        </Text>
+
+        <Button onPress={() => navigation.navigate('Home')}>Home</Button>
+    </SafeAreaView>
 }
 export default SettingsScreen

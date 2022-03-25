@@ -6,6 +6,7 @@ export const AppTheme = {
     colors: {
         primary: 'green',
         secondary: 'red',
+        background: 'white'
     }
 }
 export const AppDarkTheme = {
@@ -14,5 +15,6 @@ export const AppDarkTheme = {
     colors: {
         primary: 'yellow',
         secondary: 'white',
+        background: 'black',
     }
 }

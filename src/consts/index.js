@@ -1,3 +1,4 @@
-import { authUrls } from "./appConsts";
-import { backendUrl, routeBase } from "./config";
-export {backendUrl, routeBase, authUrls}
+import { authUrls } from "~consts/appConsts";
+import { backendUrl, routeBase } from "~consts/config";
+import { AppDarkTheme, AppTheme } from "~consts/theme";
+export { backendUrl, routeBase, authUrls, AppDarkTheme, AppTheme }

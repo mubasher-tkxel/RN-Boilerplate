@@ -5,6 +5,7 @@ const getStyles = (colors) =>
         title: {
             color: colors.primary,
         },
+
     });
 
 export default getStyles

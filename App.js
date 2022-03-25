@@ -4,20 +4,19 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AppDarkTheme, AppTheme } from './src/consts/theme';
 import { NativeBaseProvider } from 'native-base';
 import { QueryClientProvider, QueryClient } from 'react-query';
-import RootNav from './src/navigation';
+import { ThemeProvider, AuthProvider} from './src/providers';
 
 const queryClient = new QueryClient()
-
+ 
 const App = () => {
-  const scheme = useColorScheme()
   return (
-    <NavigationContainer theme={scheme === 'dark' ? AppDarkTheme : AppTheme} >
+    <ThemeProvider>
       <NativeBaseProvider>
         <QueryClientProvider client={queryClient}>
-          <RootNav />
+          <AuthProvider/>
         </QueryClientProvider>
       </NativeBaseProvider>
-    </NavigationContainer>
+    </ThemeProvider>
   );
 };
 
