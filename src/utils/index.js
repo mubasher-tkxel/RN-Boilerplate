@@ -1,17 +1,7 @@
-import { authUrls } from "../consts/appConsts";
-import langDict from "../translations/en";
-import { getData, setData } from "~utils/storage";
-
-export const checkIfAuthUrl = (targetUrl) => {
-    var isAuthUrl = false;
-    authUrls.forEach(url => {
-        if (targetUrl.includes(url)) {
-            isAuthUrl = true
-        }
-    })
-    return checkIfAuthUrl
+import { getData, setData, deleteData, updateData } from "~utils/storage";
+import { getUserToken } from "~utils/storage/user";
+import { checkIfAuthUrl, getText } from "~utils/commons";
+export {
+    getData, setData, getUserToken,
+    updateData, deleteData, checkIfAuthUrl, getText
 }
-
-export const getText = (key) => langDict[key]
-
-export { getData, setData }

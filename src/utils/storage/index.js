@@ -12,3 +12,17 @@ export const getData = (key) => {
 export const setData = (key, data) => {
     storage.set(key, JSON.stringify(data))
 }
+
+export const updateData = (key, data) => {
+    let storeData = storage.getString(key)
+    if (storeData) {
+        storeData = JSON.parse(storeData);
+        storeData = {...storeData, data}
+        setData(key, storeData)
+        return 1
+    } return 0
+}
+
+export const deleteData = (key) => {
+    storage.delete(key)
+}
