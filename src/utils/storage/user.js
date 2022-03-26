@@ -1,6 +1,6 @@
 const { getData } = require(".");
 
 export const getUserToken = () => {
-    return getData('userData')?.token
+    return getData('userData')?.tokeni
 }
 

@@ -1,4 +1,3 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
-export const RootStack = createNativeStackNavigator()
-
+import {AuthNav} from '~navigation/auth';
+import {MainNav} from '~navigation/main';
+export {AuthNav, MainNav};

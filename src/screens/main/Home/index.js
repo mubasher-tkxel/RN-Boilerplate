@@ -14,7 +14,9 @@ const HomeScreen = ({ navigation }) => {
     const styles = getStyles(colors)
     const { isLoading, error, data } = useQuery('repoData', () =>
         fetch('https://api.github.com/repos/tannerlinsley/react-query').then(res =>
-            res.json().then(response => console.log(response))
+            res.json().then(response => {
+                // console.log("**** ->  API response:    ", response)
+            })
         )
     )
     if (isLoading) return <Text>{'Loading...'}</Text>
