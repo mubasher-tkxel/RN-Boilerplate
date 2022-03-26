@@ -23,8 +23,6 @@ const AuthProvider = () => {
     };
     handleNav();
   }, []);
-
-  console.log(state)
   return (
     <AuthContext.Provider value={state}>
       {state?.isLogged ? <MainNav /> : <AuthNav />}
