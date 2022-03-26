@@ -275,6 +275,8 @@ PODS:
   - React-jsinspector (0.67.4)
   - React-logger (0.67.4):
     - glog
+  - react-native-flipper (0.140.0):
+    - React-Core
   - react-native-mmkv (2.2.0):
     - MMKV
     - React-Core
@@ -402,6 +404,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-flipper (from `../node_modules/react-native-flipper`)
   - react-native-mmkv (from `../node_modules/react-native-mmkv`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -475,6 +478,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-flipper:
+    :path: "../node_modules/react-native-flipper"
   react-native-mmkv:
     :path: "../node_modules/react-native-mmkv"
   react-native-safe-area-context:
@@ -545,6 +550,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: cbdf37cebdc4f5d8b3d0bf5ccaa6147fd9de9f3d
   React-jsinspector: f4775ea9118cbe1f72b834f0f842baa7a99508d8
   React-logger: a1f028f6d8639a3f364ef80419e5e862e1115250
+  react-native-flipper: cfc4ad1de608a27b9dd9f544b820cb1e1897aceb
   react-native-mmkv: 2a15aadabf649c364cab7975eef52848611eea25
   react-native-safe-area-context: 806f8370bf9fc9db90a3413aaa1aab0d2e22fdf3
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457

@@ -3287,6 +3287,11 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
   integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
 
+cycle@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/cycle/-/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
+  integrity sha1-IegLK+hYD5i0aPN5QwZisEbDStI=
+
 data-urls@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/data-urls/-/data-urls-2.0.0.tgz#156485a72963a970f5d5821aaf642bef2bf2db9b"
@@ -3296,7 +3301,7 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-dayjs@^1.8.15:
+dayjs@^1.8.15, dayjs@^1.8.29:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.0.tgz#009bf7ef2e2ea2d5db2e6583d2d39a4b5061e805"
   integrity sha512-JLC809s6Y948/FuCZPm5IX8rRhQwOiyMb2TfVVQEixG7P8Lm/gt5S7yoQZmC8x1UehI9Pb7sksEt4xx14m+7Ug==
@@ -6562,6 +6567,11 @@ react-native-codegen@^0.0.8:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-flipper@^0.140.0:
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.140.0.tgz#fcda8e4b0c634a7f7da7bb3744796f5b339031b5"
+  integrity sha512-dsDMEU0+NPOYq5U30xTwvdCUQC9yJ6ADu61W260er4ROggrwJyFJlRQ36rBdcys0A/p8I2LI82teyhiO9RNoFQ==
+
 react-native-iphone-x-helper@^1.0.3:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
@@ -6754,6 +6764,14 @@ recast@^0.20.3:
     esprima "~4.0.0"
     source-map "~0.6.1"
     tslib "^2.0.1"
+
+redux-flipper@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/redux-flipper/-/redux-flipper-2.0.1.tgz#a43603a13e6f06a48c627ae7c144579bd4f1fa54"
+  integrity sha512-JqgnL+fUp3h2fPQRszItLkarTbIf5gjU4Sn0IY/ZxUo6oUUmMh4Lx2J7BBy78cE8KEW9prRRpvJ6NH2uc/QktA==
+  dependencies:
+    cycle "^1.0.3"
+    dayjs "^1.8.29"
 
 redux-thunk@^2.4.1:
   version "2.4.1"
